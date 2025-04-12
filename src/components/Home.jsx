@@ -28,11 +28,6 @@ function Home() {
         <img href="" />
         <h1>MyWardrobe</h1>
         <h3>Your personal virtual closet✨</h3>
-        <div style={{ display: "flex", gap: "10px" }}>
-          <h5>Your Saved Combos</h5>
-          <h5>Your Wardrobe</h5>
-          <h5>About</h5>
-        </div>
       </nav>
       <div className="btns">
         <button onClick={() => navigate("/upload")}>Get Started</button>
