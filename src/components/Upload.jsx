@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import "./Upload.css";
 
 const UploadPage = () => {
   const [category, setCategory] = useState("tops");
@@ -21,7 +22,6 @@ const UploadPage = () => {
     if (!image) return;
 
     const formData = new FormData();
-    console.log("Image selected:", image);
     formData.append("image_file", image);
     formData.append("size", "auto");
 
@@ -46,16 +46,22 @@ const UploadPage = () => {
 
   const saveToWardrobe = (imageUrl) => {
     const existing = JSON.parse(localStorage.getItem("wardrobe")) || [];
-    const updated = [...existing, imageUrl];
+
+    const clothItem = {
+      imageUrl,
+      category,
+    };
+
+    const updated = [...existing, clothItem];
     localStorage.setItem("wardrobe", JSON.stringify(updated));
     alert("Saved to wardrobe!");
   };
 
   return (
-    <div>
-      <h1>Upload Your Clothes</h1>
+    <div className="upload-container">
+      <h1 className="upload-title">Upload Your Clothes</h1>
 
-      <div>
+      <div className="upload-form">
         <select value={category} onChange={(e) => setCategory(e.target.value)}>
           <option value="tops">Tops</option>
           <option value="bottoms">Bottoms</option>
@@ -67,14 +73,14 @@ const UploadPage = () => {
         <input type="file" accept="image/*" onChange={handleImageUpload} />
 
         <button onClick={handleRemoveBg}>Remove Background</button>
-
-        {preview && (
-          <div>
-            <img src={preview} alt="Preview" />
-            <button onClick={() => saveToWardrobe(preview)}>Save</button>
-          </div>
-        )}
       </div>
+
+      {preview && (
+        <div className="preview-section">
+          <img src={preview} alt="Preview" className="preview-img" />
+          <button onClick={() => saveToWardrobe(preview)}>Save</button>
+        </div>
+      )}
     </div>
   );
 };
