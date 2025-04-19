@@ -1,0 +1,84 @@
+/* General Container */
+.wardrobe-container {
+    padding: 20px;
+    min-height: 100vh;
+    /* background: linear-gradient(to bottom right, #f9d6e7, #a7c7e7); */
+  }
+  
+  .back-button:hover {
+    background-color: #732d91;
+  }
+  
+  /* Title */
+  .wardrobe-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #6c4f97;
+    margin-bottom: 30px;
+  }
+  
+  /* Empty Message */
+  .empty-message {
+    font-size: 1.1rem;
+    color: #777;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Clothes Grid */
+  .clothes-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  /* Clothes Card */
+  .clothes-card {
+    position: relative;
+    width: 180px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Category Label */
+  .category-label {
+    background-color: #cce7ff;
+    color: #0056b3;
+    padding: 5px 10px;
+    font-size: 0.8rem;
+    border-radius: 15px;
+    margin-bottom: 10px;
+  }
+  
+  /* Clothes Image */
+  .clothes-image {
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  /* Delete Button */
+  .delete-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: white;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .delete-button:hover {
+    background-color: #e3e3e3;
+  }
+  

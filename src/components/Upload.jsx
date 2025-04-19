@@ -44,23 +44,11 @@ const UploadPage = () => {
     }
   };
 
-  const handleSaveCloth = () => {
-    const newCloth = {
-      id: Date.now(),
-      category,
-      imageUrl: preview,
-    };
-    const updatedClothes = [...savedClothes, newCloth];
-    setSavedClothes(updatedClothes);
-    localStorage.setItem("clothes", JSON.stringify(updatedClothes));
-    setImage(null);
-    setPreview(null);
-  };
-
-  const handleDeleteCloth = (id) => {
-    const filtered = savedClothes.filter((c) => c.id !== id);
-    setSavedClothes(filtered);
-    localStorage.setItem("clothes", JSON.stringify(filtered));
+  const saveToWardrobe = (imageUrl) => {
+    const existing = JSON.parse(localStorage.getItem("wardrobe")) || [];
+    const updated = [...existing, imageUrl];
+    localStorage.setItem("wardrobe", JSON.stringify(updated));
+    alert("Saved to wardrobe!");
   };
 
   return (
@@ -82,20 +70,9 @@ const UploadPage = () => {
         {preview && (
           <div>
             <img src={preview} alt="Preview" />
-            <button onClick={handleSaveCloth}>Save Cloth</button>
+            <button onClick={() => saveToWardrobe(preview)}>Save</button>
           </div>
         )}
-      </div>
-
-      <h2>Saved Clothes</h2>
-      <div>
-        {savedClothes.map((cloth) => (
-          <div key={cloth.id}>
-            <img src={cloth.imageUrl} alt="Cloth" />
-            <p>{cloth.category}</p>
-            <button onClick={() => handleDeleteCloth(cloth.id)}>Delete</button>
-          </div>
-        ))}
       </div>
     </div>
   );
