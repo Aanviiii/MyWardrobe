@@ -1,39 +1,24 @@
 import React from "react";
 import "./Home.css";
-// import Upload from "./Upload";
-// import OutfitGenerator from "./OutfitGenerator";
-// import SavedCombos from "./SavedCombos";
-// import About from "./About";
+import { Link } from "react-router-dom";
+import Upload from "./Upload";
+import OutfitGenerator from "./OutfitGenerator";
 
 function Home() {
   return (
     <div>
-      {/* <navLink to="/">
-        <Home />
-      </navLink>
-      <NavLink to="/upload">
-        <Upload />
-      </NavLink>
-      <NavLink to="/generate">
-        <OutfitGenerator />
-      </NavLink>
-      <NavLink to="/combos">
-        <SavedCombos />
-      </NavLink>
-      <NavLink to="/help">
-        <About />
-      </NavLink> */}
-
       <nav>
-        <img href="" />
+        {/* <img src="" alt="Logo" /> */}
         <h1>MyWardrobe</h1>
         <h3>Your personal virtual closet✨</h3>
       </nav>
       <div className="btns">
-        <button onClick={() => navigate("/upload")}>Get Started</button>
-        <button onClick={() => navigate("/generate")}>
-          Try Outfit Generator
-        </button>
+        <Link to="/upload">
+          <button>Get Started</button>
+        </Link>
+        <Link to="/outfitgenerator">
+          <button>Try Outfit Generator</button>
+        </Link>
         <div>
           <h2>How to use?</h2>
           <div style={{ display: "flex", gap: "10px" }}>
