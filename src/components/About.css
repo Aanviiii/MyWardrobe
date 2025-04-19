@@ -3,9 +3,12 @@
     max-width: 900px;
     margin: auto;
     margin-top: 60px;
+    margin-bottom: 60px;
     font-family: 'Segoe UI', sans-serif;
     background-color: #fef7f2;
     color: #333;
+    border-radius: 9px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
   }
   
   .back-button {
@@ -27,7 +30,7 @@
   .about-title {
     font-size: 2.5rem;
     margin-bottom: 10px;
-    color: #d946ef;
+    color: #a909f9;
   }
   
   .about-intro {
@@ -38,7 +41,7 @@
   
   h2 {
     margin-top: 25px;
-    color: #8b5cf6;
+    color: #8d14ac;
     font-size: 1.5rem;
   }
   
@@ -60,5 +63,39 @@
     font-weight: bold;
     font-style: italic;
     color: #6b21a8;
+  }
+  
+  /* ✅ Responsive Design */
+  @media (max-width: 768px) {
+    .about-container {
+      padding: 20px;
+      margin-top: 40px;
+    }
+  
+    .about-title {
+      font-size: 2rem;
+      text-align: center;
+    }
+  
+    .about-intro,
+    .tech-stack,
+    .about-footer {
+      font-size: 1rem;
+      text-align: justify;
+    }
+  
+    h2 {
+      font-size: 1.3rem;
+    }
+  
+    .feature-list {
+      font-size: 1rem;
+      padding-left: 18px;
+    }
+  
+    .back-button {
+      font-size: 0.9rem;
+      padding: 6px 12px;
+    }
   }
   

@@ -31,9 +31,9 @@ function About() {
         <li>
           <strong>Save Your Favorite Styles:</strong> Keep your best looks.
         </li>
-        <li>
+        {/* <li>
           <strong>Filter by Color:</strong> Search your wardrobe easily.
-        </li>
+        </li> */}
         <li>
           <strong>Edit or Delete:</strong> Keep everything up to date.
         </li>

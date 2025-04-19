@@ -59,6 +59,7 @@ const UploadPage = () => {
         <select value={category} onChange={(e) => setCategory(e.target.value)}>
           <option value="tops">Tops</option>
           <option value="bottoms">Bottoms</option>
+          <option value="dresses">Dresses</option>
           <option value="shoes">Shoes</option>
           <option value="accessories">Accessories</option>
         </select>
