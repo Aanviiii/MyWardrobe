@@ -23,7 +23,7 @@ function Wardrobe() {
       {/* Empty Message */}
       {clothes.length === 0 ? (
         <p className="empty-message">
-          No clothes yet! Start uploading to fill your wardrobe. 👕👖
+          No clothes yet! Start uploading to fill your wardrobe.
         </p>
       ) : (
         <div className="clothes-grid">

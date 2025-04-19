@@ -69,7 +69,7 @@ function Navbar() {
           color: "inherit",
         }}
       >
-        Generater Outfits
+        Generate Outfits
       </Link>
 
       <Link

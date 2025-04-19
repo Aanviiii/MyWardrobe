@@ -1,8 +1,6 @@
 import React from "react";
 import "./Home.css";
 import { Link } from "react-router-dom";
-import Upload from "./Upload";
-import OutfitGenerator from "./OutfitGenerator";
 
 function Home() {
   return (
@@ -13,6 +11,9 @@ function Home() {
         <h3>Your personal virtual closet✨</h3>
       </nav>
       <div className="btns">
+        <Link to="/about">
+          <button>About</button>
+        </Link>
         <Link to="/upload">
           <button>Get Started</button>
         </Link>
@@ -20,14 +21,22 @@ function Home() {
           <button>Try Outfit Generator</button>
         </Link>
         <div>
-          <h2>How to use?</h2>
+          <h2 style={{ color: "black" }}>How to use?</h2>
           <div style={{ display: "flex", gap: "10px" }}>
-            <div className="cards">👚</div>
-            {/* Upload clothes */}
-            <div className="cards">🔀</div>
-            {/* Generate looks */}
-            <div className="cards">💾</div>
-            {/* Save outfits */}
+            <div className="cards">
+              👚
+              <p style={{ fontSize: "15px" }}>Upload clothes</p>
+            </div>
+            <div className="cards">
+              🔀
+              <br />
+              <p style={{ fontSize: "15px" }}>Generate looks</p>
+            </div>
+            <div className="cards">
+              💾
+              <br />
+              <p style={{ fontSize: "15px" }}>Save outfits</p>
+            </div>
           </div>
         </div>
       </div>
