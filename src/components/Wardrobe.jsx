@@ -59,7 +59,7 @@ function Wardrobe() {
 
   return (
     <div className="wardrobe-container">
-      <h2 className="wardrobe-title">My Wardrobe</h2>
+      <h2 className="wardrobe-title">🧺 My Wardrobe</h2>
 
       {Object.keys(groupedClothes).length === 0 ? (
         <p className="empty-message">

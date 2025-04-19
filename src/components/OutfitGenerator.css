@@ -1,0 +1,93 @@
+/* Container */
+.outfit-container {
+    padding: 20px;
+    min-height: 100vh;
+    background: linear-gradient(to bottom right, #fce1f2, #dbeafe);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  /* Title */
+  .outfit-title {
+    font-size: 2rem;
+    color: #6c4f97;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  /* Outfit Grid */
+  .outfit-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    max-width: 1000px;
+    width: 100%;
+  }
+  
+  /* Card for each clothing item */
+  .outfit-card {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 180px;
+    padding: 15px;
+    text-align: center;
+    position: relative;
+  }
+  
+  /* Image */
+  .outfit-image {
+    width: 100%;
+    height: 160px;
+    object-fit: contain;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  /* Category Tag */
+  .outfit-category {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #cce7ff;
+    color: #0056b3;
+    padding: 4px 8px;
+    font-size: 0.75rem;
+    border-radius: 12px;
+  }
+  
+  /* Generate Button */
+  .generate-btn {
+    padding: 10px 20px;
+    background-color: #6c4f97;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .generate-btn:hover {
+    background-color: #54357d;
+  }
+  
+  /* Responsive tweaks */
+  @media (max-width: 768px) {
+    .outfit-title {
+      font-size: 1.5rem;
+    }
+  
+    .outfit-card {
+      width: 140px;
+      padding: 10px;
+    }
+  
+    .outfit-image {
+      height: 120px;
+    }
+  }
+  
