@@ -6,6 +6,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  align-self: center;
   gap: 30px;
 }
   
@@ -69,12 +70,42 @@
   font-size: 1rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  }
+}
 
 .generate-btn:hover {
   background-color: #54357d;
 }
-  
+
+/* Save Outfit Section */
+.save-outfit-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.save-outfit-button {
+  padding: 10px 18px;
+  background-color: #34a853;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.save-outfit-button:hover {
+  background-color: #2b8a3e;
+}
+
+.save-message {
+  font-size: 0.9rem;
+  color: #444;
+  font-style: italic;
+}
+
 /* Responsive tweaks */
 @media (max-width: 768px) {
   .outfit-title {
@@ -89,5 +120,13 @@
   .outfit-image {
     height: 120px;
   }
+
+  .save-outfit-button {
+    font-size: 0.9rem;
+    padding: 8px 14px;
+  }
+
+  .save-message {
+    font-size: 0.8rem;
+  }
 }
-  

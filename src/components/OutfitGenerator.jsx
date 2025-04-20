@@ -48,8 +48,16 @@ function OutfitGenerator() {
       ? [dress, shoes, accessories]
       : [top, bottom, shoes, accessories];
 
-    // Filter out nulls
     setOutfit(newOutfit.filter(Boolean));
+  };
+
+  const saveOutfit = () => {
+    if (outfit.length === 0) return;
+
+    const saved = JSON.parse(localStorage.getItem("savedOutfits")) || [];
+    saved.push(outfit);
+    localStorage.setItem("savedOutfits", JSON.stringify(saved));
+    alert("Outfit saved successfully!");
   };
 
   return (
@@ -58,6 +66,12 @@ function OutfitGenerator() {
       <button onClick={generateOutfit} className="generate-button">
         Generate Random Outfit
       </button>
+
+      {outfit.length > 0 && (
+        <button onClick={saveOutfit} className="save-button">
+          Save Combo
+        </button>
+      )}
 
       {outfit.length === 0 ? (
         <p className="empty-outfit-message">
