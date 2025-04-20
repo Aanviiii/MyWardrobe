@@ -12,8 +12,8 @@ function About() {
       <h1 className="about-title">👗 About MyWardrobe</h1>
 
       <p className="about-intro">
-        <strong>MyWardrobe</strong> is your personal digital closet — a creative
-        space to organize, visualize, and style your clothing!
+        <strong>MyWardrobe</strong> is your personal digital closet — a space to
+        organize, visualize, and style your clothing!
       </p>
 
       <h2>✨ What Can You Do Here?</h2>
@@ -25,15 +25,11 @@ function About() {
           <strong>Remove Backgrounds:</strong> Make images pop with one click.
         </li>
         <li>
-          <strong>Create Outfit Combos:</strong> Pair items randomly or
-          manually.
+          <strong>Create Outfit Combos:</strong> Pair items randomly.
         </li>
         <li>
           <strong>Save Your Favorite Styles:</strong> Keep your best looks.
         </li>
-        {/* <li>
-          <strong>Filter by Color:</strong> Search your wardrobe easily.
-        </li> */}
         <li>
           <strong>Edit or Delete:</strong> Keep everything up to date.
         </li>
@@ -47,7 +43,7 @@ function About() {
         <li>Perfect for last-minute events as well!</li>
       </ul>
 
-      <h2>🛠 Tech Stack</h2>
+      <h2>⚙️ Tech Stack</h2>
       <p className="tech-stack">
         Built with 💜 using: React.js, React Router, Plain CSS, Remove.bg API,
         and Local Storage.

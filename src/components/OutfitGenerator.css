@@ -1,17 +1,18 @@
 /* Container */
-.outfit-container {
-  padding: 20px;
+.outfit-generator-container {
   min-height: 100vh;
-  background: linear-gradient(to bottom right, #fce1f2, #dbeafe);
+  margin: 0;
+  padding: 20px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  align-self: center;
+  align-items: center;       /* Horizontally center */
   gap: 30px;
+  box-sizing: border-box;
 }
+
   
 /* Title */
-.outfit-title {
+.generator-title {
   font-size: 2rem;
   color: #6c4f97;
   font-weight: bold;
@@ -19,7 +20,7 @@
 }
   
 /* Outfit Grid */
-.outfit-grid {
+.outfit-display {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -61,7 +62,7 @@
 }
   
 /* Generate Button */
-.generate-btn {
+.generate-button {
   padding: 10px 20px;
   background-color: #6c4f97;
   color: white;
@@ -72,32 +73,23 @@
   transition: background-color 0.3s ease;
 }
 
-.generate-btn:hover {
+.generate-button:hover {
   background-color: #54357d;
 }
 
 /* Save Outfit Section */
-.save-outfit-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  margin-top: 20px;
-}
-
-.save-outfit-button {
+.save-button {
   padding: 10px 18px;
-  background-color: #34a853;
+  background-color: #6a0dad;
   color: white;
   border: none;
   border-radius: 8px;
   font-size: 1rem;
   cursor: pointer;
-  transition: background-color 0.3s ease;
 }
 
-.save-outfit-button:hover {
-  background-color: #2b8a3e;
+.save-button:hover {
+  background-color: #4e008e;
 }
 
 .save-message {
@@ -108,7 +100,7 @@
 
 /* Responsive tweaks */
 @media (max-width: 768px) {
-  .outfit-title {
+  .generator-title {
     font-size: 1.5rem;
   }
 
@@ -121,7 +113,7 @@
     height: 120px;
   }
 
-  .save-outfit-button {
+  .save-button {
     font-size: 0.9rem;
     padding: 8px 14px;
   }

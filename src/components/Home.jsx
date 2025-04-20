@@ -39,9 +39,6 @@ function Home() {
           </div>
         </div>
       </div>
-      <footer className="footer">
-        <p>© 2025 MyWardrobe. All rights reserved.</p>
-      </footer>
     </div>
   );
 }

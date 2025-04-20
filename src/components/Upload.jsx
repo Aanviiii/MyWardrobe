@@ -78,7 +78,14 @@ const UploadPage = () => {
       {preview && (
         <div className="preview-section">
           <img src={preview} alt="Preview" className="preview-img" />
-          <button onClick={() => saveToWardrobe(preview)}>Save</button>
+          <button
+            onClick={() => {
+              saveToWardrobe(preview);
+              setPreview(null);
+            }}
+          >
+            Save to Wardrobe
+          </button>
         </div>
       )}
     </div>
