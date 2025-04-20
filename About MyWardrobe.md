@@ -16,4 +16,4 @@ MyWardRobe is a virtual wradrobe app where you can upload your clothes, mix & ma
 - Deployed on Vercel
 
 ### 📸 Screenshots
-(Insert screenshots here)
+![image](https://github.com/user-attachments/assets/46a38d1f-dace-4863-b5d9-9b4b2c6bf6d7)
