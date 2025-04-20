@@ -5,11 +5,10 @@ import { Link } from "react-router-dom";
 function Home() {
   return (
     <div>
-      <nav>
-        {/* <img src="" alt="Logo" /> */}
+      <div className="nav">
         <h1>MyWardrobe</h1>
         <h3>Your personal virtual closet✨</h3>
-      </nav>
+      </div>
       <div className="btns">
         <Link to="/about">
           <button>About</button>
