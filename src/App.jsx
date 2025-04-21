@@ -1,4 +1,4 @@
-import "./App.css";
+// Importing all necessary packages & files
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
@@ -14,6 +14,7 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <Routes>
+          {/* Establishing routes */}
           <Route path="/" element={<Home />} />
           <Route path="/upload" element={<Upload />} />
           <Route path="/wardrobe" element={<Wardrobe />} />

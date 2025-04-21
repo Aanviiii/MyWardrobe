@@ -5,14 +5,14 @@ function SavedCombos() {
   const [savedCombos, setSavedCombos] = useState([]);
 
   useEffect(() => {
-    const saved = JSON.parse(localStorage.getItem("savedOutfits")) || [];
+    const saved = JSON.parse(localStorage.getItem("savedOutfits")) || []; // Accessing saved combos from local storage
     setSavedCombos(saved);
   }, []);
 
   const deleteCombo = (indexToDelete) => {
     const updated = savedCombos.filter((_, index) => index !== indexToDelete);
     setSavedCombos(updated);
-    localStorage.setItem("savedOutfits", JSON.stringify(updated));
+    localStorage.setItem("savedOutfits", JSON.stringify(updated)); // Deleting specific combos from local storage
   };
 
   return (

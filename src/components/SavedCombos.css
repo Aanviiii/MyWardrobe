@@ -1,4 +1,4 @@
-/* Container */
+/* Default design */
 .saved-combos-container {
     padding: 30px 20px;
     min-height: 100vh;
@@ -7,23 +7,20 @@
     align-items: center;
     gap: 30px;
 }
-  
-/* Title */
+
 .saved-title {
     font-size: 2rem;
     color: #6c4f97;
     font-weight: bold;
     text-align: center;
 }
-  
-/* No Saved Message */
+
 .no-saved-message {
     font-size: 1.2rem;
     color: #555;
     text-align: center;
 }
-  
-/* Combo List Grid */
+
 .combo-list {
     display: flex;
     flex-direction: column;
@@ -31,16 +28,14 @@
     width: 100%;
     max-width: 1000px;
 }
-  
-/* Individual Combo Card */
+
 .combo-card {
     background-color: white;
     border-radius: 20px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
     padding: 20px;
 }
-  
-/* Items inside each combo */
+
 .combo-items {
     display: flex;
     flex-wrap: wrap;
@@ -48,7 +43,6 @@
     justify-content: center;
 }
 
-/* Each item */
 .combo-item {
     position: relative;
     width: 150px;
@@ -73,8 +67,7 @@
     font-size: 0.75rem;
     border-radius: 12px;
 }
-  
-/* Delete Button */
+
 .delete-combo-button {
     margin-top: 15px;
     background-color: #ff5c5c;
@@ -91,7 +84,7 @@
     background-color: #d94343;
 }
   
-/* Responsive */
+/* Responsive Design */
 @media (max-width: 768px) {
     .saved-title {
       font-size: 1.5rem;

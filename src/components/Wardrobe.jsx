@@ -7,7 +7,7 @@ function Wardrobe() {
   useEffect(() => {
     const saved = JSON.parse(localStorage.getItem("wardrobe")) || [];
 
-    // Normalize category names to match consistent display
+    // Displaying clothes in their specific categories
     const normalizeCategory = (cat) => {
       switch (cat.toLowerCase()) {
         case "tops":
@@ -47,13 +47,11 @@ function Wardrobe() {
       [category]: updatedCategory,
     };
 
-    // Flatten all grouped clothes to save back to localStorage
     const flattened = Object.entries(updatedGrouped).flatMap(([cat, items]) =>
       items.map((item) => ({ ...item, category: cat.toLowerCase() }))
     );
     localStorage.setItem("wardrobe", JSON.stringify(flattened));
 
-    // Update state
     setGroupedClothes(updatedGrouped);
   };
 

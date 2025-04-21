@@ -1,3 +1,4 @@
+/* Default Styling */
 .upload-container {
   max-width: 600px;
   margin: 50px auto;
@@ -73,7 +74,7 @@
   background-color: #4e008e;
 }
   
-/* ✅ Responsive Styling */
+/* Responsive Styling */
 @media (max-width: 600px) {
   .upload-container {
     margin: 20px;

@@ -1,4 +1,4 @@
-/* Default styles (Desktop / Large screens) */
+/* Default styles (Desktop) */
 button {
   background-color: rgb(211, 147, 238);
   margin: 6px;
@@ -68,7 +68,7 @@ button:hover {
   margin-top: 20px;
 }
   
-/* Responsive Styles */
+/* Responsive Design */
 @media (max-width: 768px) {
   .btns {
     padding: 10px;

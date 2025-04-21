@@ -13,7 +13,7 @@ function OutfitGenerator() {
   const [outfit, setOutfit] = useState([]);
 
   useEffect(() => {
-    const saved = JSON.parse(localStorage.getItem("wardrobe")) || [];
+    const saved = JSON.parse(localStorage.getItem("wardrobe")) || []; // Accessing clothes from local storage
     const grouped = {
       tops: [],
       bottoms: [],
@@ -43,7 +43,7 @@ function OutfitGenerator() {
     const bottom = getRandomItem(clothes.bottoms);
     const shoes = getRandomItem(clothes.shoes);
     const accessories = getRandomItem(clothes.accessories);
-
+    // Generating outfit combos consisting of either a dress, shoes & accessories or a top, bottom, shoes & accessories
     const newOutfit = dress
       ? [dress, shoes, accessories]
       : [top, bottom, shoes, accessories];

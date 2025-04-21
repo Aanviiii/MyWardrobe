@@ -10,12 +10,12 @@ const UploadPage = () => {
   useEffect(() => {
     const data = localStorage.getItem("clothes");
     if (data) {
-      setSavedClothes(JSON.parse(data));
+      setSavedClothes(JSON.parse(data)); // Accessing saved clothes from local storage
     }
   }, []);
 
   const handleImageUpload = (e) => {
-    setImage(e.target.files[0]);
+    setImage(e.target.files[0]); // Uploading images to removr background
   };
 
   const handleRemoveBg = async () => {
@@ -29,7 +29,7 @@ const UploadPage = () => {
       const response = await fetch("https://api.remove.bg/v1.0/removebg", {
         method: "POST",
         headers: {
-          "X-Api-Key": import.meta.env.VITE_REMOVE_BG_KEY,
+          "X-Api-Key": import.meta.env.VITE_REMOVE_BG_KEY, // Importing the Background remover API
         },
         body: formData,
       });
@@ -53,7 +53,7 @@ const UploadPage = () => {
     };
 
     const updated = [...existing, clothItem];
-    localStorage.setItem("wardrobe", JSON.stringify(updated));
+    localStorage.setItem("wardrobe", JSON.stringify(updated)); // Storing clothes in local storage
     alert("Saved to wardrobe!");
   };
 

@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 function Navbar() {
   return (
     <nav className="navbar">
+      {/* The navigation bar is common for all the pages */}
       <Link to="/">
         <img src={Logo} alt="MyWardrobe Logo" className="logo" />
       </Link>

@@ -20,6 +20,7 @@ function Home() {
           <button>Try Outfit Generator</button>
         </Link>
         <div>
+          {/* Instuctions on how to use */}
           <h2 style={{ color: "black" }}>How to use?</h2>
           <div style={{ display: "flex", gap: "10px" }}>
             <div className="cards">

@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 function About() {
   return (
     <div className="about-container">
+      {/* This page tells about the features of the website */}
       <Link to="/" className="back-button">
         ⬅ Back to Home
       </Link>
